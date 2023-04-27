@@ -1,5 +1,5 @@
 /* javascript.js */
-  
+
 const getPlayerChoice = playerInput =>{
     playerInput = playerInput.toLowercase();
     if(playerInput === 'rock' || playerInput === 'paper' || playerInput === 'scissors'){
@@ -47,3 +47,10 @@ const determineWinner = (playerSelection,computerSelection) => {
         }
     }
 }
+function playRound(){
+    let playerSelection = getPlayerChoice('rock');
+    let computerSelection = getComputerChoice('scissors');
+    console.log(playerSelection,computerSelection);
+    console.log(determineWinner(playerSelection,computerSelection));
+}
+console.log(playRound());
