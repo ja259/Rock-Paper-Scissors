@@ -1,11 +1,11 @@
 /* javascript.js */
 
-const getPlayerChoice = playerInput =>{
+const getPlayerChoice = playerInput => {
     playerInput = playerInput.toLowercase();
     if(playerInput === 'rock' || playerInput === 'paper' || playerInput === 'scissors'){
         return playerInput;
     } else{
-        console.log('Error')
+        console.log('Error!');
     }
 }
 
@@ -16,7 +16,7 @@ const getComputerChoice = () => {
             return 'rock';
         case 1:
             return 'paper';
-        case 2:
+        case 3:
             return 'scissors';        
     }
 }
