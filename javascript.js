@@ -1,7 +1,7 @@
 /* javascript.js */
 
 const getPlayerChoice = playerInput => {
-    playerInput = playerInput.toLowercase();
+    playerInput = playerInput.toLowerCase();
     if(playerInput === 'rock' || playerInput === 'paper' || playerInput === 'scissors'){
         return playerInput;
     } else{
